@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div > span {
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div> 重遇世界
+ <span> 旅程</span>
+ <span> 重生</span>
+ <div> 重遇世界
+   <span> 再遇</span>
+   <p> 最後的旅程<span> 永別</span></p>
+ </div>
+</div>
+
+</body>
+</html>
