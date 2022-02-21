@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-  background-color: lightblue;
-}
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>
+ <style>
 
-#mecat {
-  color: white;
-  text-align: center;
-}
 
-#youcat{
-  color: white;
-  
-}
+ #mecat {
+  color: lightblue;             <!--天界（head）部分-->
+ }
 
-#whocat {
-  color: white;
-  text-align: right;
-}
+ #youcat{
+  color: lightpink;  
+ } 
 
-#knowcat {
-  color: grey;
-  text-align: center;
-}
+ #whocat {                          
+  color: green;             <!--我們為每個id都加入一種顏色，這樣就能夠清楚地看出id的實際影響-->          
+ }
+
+ #knowcat {
+  color: orange;
+ }
 
 </style>
 </head>
 <body>
 
-<h2 id="mecat"> 我是貓</h2>
-<h2 id="youcat"> 你是貓</h2>
-<h2 id="whocat"> 誰是貓</h2>
-<h2 id="knowcat"> 誰懂貓</h2>
-<h2> 但願如此</h2>
+ <h2 id="mecat"> 我是貓</h2>
+ <h2 id="youcat"> 你是貓</h2>
+ <h2 id="whocat"> 誰是貓</h2>
+ <h2 id="knowcat"> 誰懂貓</h2>        <!--人界（body）部分，我們同時為每個標題都加入獨特的id，這樣就會看到id的實際效果，你也可以嘗試讓id重複使用在不同標題上，查看會呈現的模樣-->
+ <h2> 但願如此</h2>
 
 </body>
 </html>
