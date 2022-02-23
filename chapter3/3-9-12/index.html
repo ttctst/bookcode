@@ -5,17 +5,21 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
  <title>Document</title>     <!--天界（head）部分-->
  <style>
-  .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:50vh;
+  .container { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
   width:50vw;
+  height:50vh;
+  align-items: center;
+  justify-content: center;   /實際上和3-9-11的相同，但這次同時加入了justify-content的部分，做到完全置中的效果*/
+  
   }
+  
   div {
   border:solid 1px lightblue;
   width:10vw;
-  margin:2px;
+  margin:5px;
   }
  </style>
 </head>
