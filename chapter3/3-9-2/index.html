@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  div {
+  width: 400px;
+  height: 200px;
+  border: 3px solid rgb(18,127,255);
+  }
+  .relative {
+  border: 3px solid rgb(60,150,250);    
+  position: relative;
+  width: 200px;
+  height: 100px;    
+  top: 50px;   /*除了這部分外，其他部分的設定都是相同的，可以見到這次加上了top和right，透過自行調節，或是修改為bottom、right，更能看清當中的變化的 */
+  left: 50px;
+  }
+  p{
+  text-align:center;
+  }
+ </style>
+</head>
+<body>
+
+
+ <div>
+  <div class="relative"> 
+    <p> relative </p>
+  </div>
+ </div>
+
+
+</body>
+</html>
