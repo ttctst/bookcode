@@ -3,10 +3,12 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">  <!--需要加入字體檔案的連結，這樣希望加入的額外字體才能正常的顯示-->
- <title>Document</title>   <!--天界（head）部分-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">          <!--preconnect的部分，這樣就能夠預先連接到儲存字體的雲端，節省時間-->
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">  <!--需要加入字體檔案的連結，這樣希望加入的額外字體才能正常的顯示-->
+ <title>Document</title>   
  <style>
- body {
+ body { 
  font-family: "Sofia", sans-serif; 
  }   
  </style>
@@ -14,7 +16,7 @@
 <body>
  
   <h2>新的一天</h2> 
-  <!--人界（body）部分，這同樣可以透過Google開發者工具的計算樣式或是WhatFont來查看的，由於"sofia"這個字體是給英文用的，所以在中文上不會有任何效果，相反會採用了後方的後備方案"sans-serif"-->
+  <!--這同樣可以透過Google開發者工具的計算樣式或是WhatFont來查看的，由於"sofia"這個字體是給英文用的，所以在中文上不會有任何效果，相反會採用了後方的後備方案"sans-serif"-->
  
   <h2>New World</h2>
 </body>
