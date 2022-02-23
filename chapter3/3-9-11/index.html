@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:50vw;
+  align-items: center;  /*雖然在書中編碼同樣使用了justify-contents，但實際該為aligin-items，才能做到cross-axis 上的置中*/
+  }
+  
+  div {
+  border:solid 1px lightblue;
+  width:20vw;
+  margin:5px;
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three
+  <br>has
+  <br>extra
+  <br>text
+  </div>
+</div>
+
+</body>
+</html>
