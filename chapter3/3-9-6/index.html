@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .relative {
+  width: 400px;
+  height: 300px;
+  border: 3px solid rgb(18,127,255);
+  margin-top:40px;
+  position: relative;
+  }
+  .absolute {
+  width: 200px;
+  height: 100px;
+  border: 3px solid rgb(30,110,230);
+  background-color: rgb(30,110,230);
+  position: absolute;
+  top: 20px;
+  left:20px;
+  }
+ </style>
+</head>
+<body>
+
+  
+ <div class="relative">    <!--由於這次外圍的部分會需要有著position：relative來控制著absolute的活動範圍，所以這次多加了加入了有著position：relative設定的class-->
+  <div class="absolute">  
+  </div> 
+ </div>
+
+
+</body>
+</html>
