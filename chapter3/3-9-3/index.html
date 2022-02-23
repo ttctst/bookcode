@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  div {
+  width: 400px;
+  height: 50vh;
+  border: 3px solid rgb(18,127,255);
+  }
+  .z-index1 {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border: 3px solid rgb(30,110,230);  /*這部分為新加入的，可以留意到除了這部分外，其他大致上還是相近*/
+  top: 90px;           
+  left: 50px;
+  z-index:1;       
+  }
+  .relative {
+  border: 3px solid rgb(60,150,250);
+  background: rgba(18,127,255,0.7);  /*我們加入了背景，並利用rgba，讓背景透明化，讓效果更為明顯 */
+  position: relative;
+  width: 200px;
+  height: 100px;    
+  top: 40px;          /*這裡和先前3-9-2相比，修改了了top和right的部分，讓代表z-index和relative兩個部分，能夠做到重疊的效果 */
+  left: 80px;
+  }
+  
+  p{
+  text-align:center;
+  }
+ </style>
+</head>
+<body>
+
+
+ <div>
+  <div class="z-index1">   
+    <p> z-index1 </p>     <!--由於我們需要讓z-index1所屬的那個div，和先前的relative一樣都在外圍的div之下，所以同樣地放在這個層級-->
+  </div> 
+  <div class="relative"> 
+    <p> relative </p>  
+  </div>
+ 
+ </div>
+<!--人界（body）部分--> 
+
+</body>
+</html>
