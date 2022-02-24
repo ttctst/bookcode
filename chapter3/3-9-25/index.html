@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr; /*設定和3-22的例子相近，只是我們這次並非使用px等常見單位，而是使用了fr這個grid專用的 */
+  gap:5px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+</body>
+</html>
