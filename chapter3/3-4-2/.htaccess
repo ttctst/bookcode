@@ -1,0 +1,40 @@
+# SGS XMLRPC Disable Service   //以下為一個檔案的實際例子，主要留意那段編碼加入的確實位置，你會留意到編碼會貼近於底部的
+<Files xmlrpc.php>
+	order deny,allow
+	deny from all
+</Files>
+# SGS XMLRPC Disable Service END
+# SGS XSS Header Service
+<IfModule mod_headers.c>
+    # SGS XSS
+     Header always set X-Content-Type-Options "nosniff"
+     Header set X-XSS-Protection "1; mode=block"
+    # SGS XSS END
+</IfModule>
+# SGS XSS Header Service END
+
+# BEGIN WordPress
+# 在含有 BEGIN WordPress 及 END WordPress 標記的這兩行間的指示詞內容為動態產生，
+# 且應僅有 WordPress 篩選器能進行修改。對這兩行間任何指示詞內容的變更，
+# 都會遭到系統覆寫。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# SGO Unset Vary
+  Header unset Vary
+# SGO Unset Vary END  //這段剛好貼近在底部
+
+php_value upload_max_filesize 5000M  //編碼加入的位置
+php_value post_max_size 5000M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300
