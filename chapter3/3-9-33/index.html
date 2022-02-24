@@ -5,9 +5,12 @@
 .grid-container {
   
   display: grid;
-  grid-template-columns: repeat(8, minmax(40px, 1fr));
+  grid-template-columns: repeat(8, minmax(40px, 1fr));  /*編碼中同樣重覆輸入了grid-template-columns的部分，但實際為沒需要的*/
   gap:20px 30px;
-  grid-template-rows: 200px 130px;
+  grid-template-rows: 200px 130px;    
+  
+  /*沒有設定justify-items: start;的，其實也相等於justify-items: stretch，雖然例圖中的stretch較為奇特，但實際上最後的效果，和align-items是完全相同*/
+  
   height:400px;
   padding: 10px;
   
@@ -19,7 +22,7 @@
   grid-template-columns: repeat(8, minmax(40px, 1fr));
   gap:20px 30px;
   grid-template-rows: 200px 130px;
-  justify-items: start;
+  justify-items: start;  /*設定了justify-items: start;的，只要運行編碼，就能夠清楚地對比到兩者之間的差別，也可以修改一下start的部分，查看其他設定下和原先的差別所在*/
   height:500px;
   padding: 10px;
   margin-top:40px;
