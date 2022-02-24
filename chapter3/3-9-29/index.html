@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));   /*設定了auto-fill的 */
+  grid-template-rows: 50px 50px;
+  gap:20px 30px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+.grid-container1 {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));  
+  
+  /*設定了auto-fit的 ，可以嘗試利用開發者工具來查看（教學圖片鏈結：https://i.imgur.com/MuLNq4w.png），把上方的尺寸設定為回應式，然後拉動類似於連中左邊的欄位來模擬不同的螢幕大小
+  亦可在尺寸中直接選擇不同的手機／電腦／平板型號來模擬不同螢幕大小，也可以調整頂部有%的部分，來模擬較大螢幕的產品*/
+  
+  grid-template-rows: 50px 50px;
+  gap:20px 30px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+
+<div class="grid-container1">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+</body>
+</html>
