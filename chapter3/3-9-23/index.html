@@ -4,10 +4,10 @@
 <style>
 .grid-container {
   display: grid;
-  grid-auto-columns: 50px ;    <!--由於這個設定實際上為預設所有橫向方格的大小，所以加入這設定後，呈現的模樣和3-9-21中的sample.html一樣，並不會自行橫向繪製
-   只是由於那時候並無作額外設定，所以大小的設定會是auto，而這次限制了，則會為50px-->
+  grid-auto-columns: 50px ;    /*由於這個設定實際上為預設所有方格橫向部分的大小，所以加入這設定後，呈現的模樣和3-9-21中的sample.html一樣，並不會自行橫向繪製，
+   只是由於那時候並無作額外設定，所以大小的設定會是auto，而這次限制了，則會為50px*/
   gap:5px;
-  grid-template-rows: 50px 50px;    <!--雖然在這裡設定了垂直部分會有的方格數目，但並不能夠正常地顯示-->
+  grid-template-rows: 50px 50px;    /*雖然在這裡設定了垂直部分會有的方格數目，但並不能夠正常地顯示*/
   background-color: lightblue;
 
   padding: 10px;
