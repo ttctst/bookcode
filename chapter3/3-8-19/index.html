@@ -5,17 +5,37 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
  <title>Document</title>     <!--天界（head）部分-->
  <style>
-  div {
-  border: 1px solid white;
-  box-shadow: inset 3px 3px 20px 10px rgb(106,172,251);
-  height: 50vh;
+  .container { 
+  display: flex;
+  flex-flow: row wrap; 
+  gap: 10px;
+  width:80vw;
+  
   }
+
+  div {
+  border:solid 1px lightblue;  
+  flex: 1 1 auto;     /*這裡的做法和3-9-17的flex-shrink相同，只是這次沒有加入到flex-basis的設定，並使用了速寫的方法來表達 */ 
+  }
+  
+  .shrink {
+  border:solid 1px lightblue;
+  flex: 0 3 auto;  
+  }
+  
+ 
  </style>
 </head>
 <body>
 
 
- <div></div>
+
+<div class="container">
+  <div >One</div>
+  <div >Two </div>
+  <div class="shrink">Three has extra text </div>
+</div>
+
 
 
 </body>
