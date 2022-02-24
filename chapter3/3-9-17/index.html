@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  width:80vw;
+  
+  }
+
+  div {
+  border:solid 1px lightblue;
+  
+  }
+  
+  .grow {
+  flex-basis: 120px;
+  flex-shrink: 3; 
+  /*要讓flex shrink的效果能夠顯示，需要其他預先設定好大小，不然由於沒有任何限制，最終還是會沒有任何實際效果，這裡我們使用了下一個會介紹的flex-basis，讓每個flex的大小一致*/
+  }
+  .normal{
+  flex-basis: 120px;     
+  flex-shrink: 1;
+  flex-grow: 1;  /*我們也加入了flex grow，這樣即使設定了的大小未能填滿整個flexbox，也能依靠電腦自行平均分佈，但這部分並不是必要的*/
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="normal">One</div>
+  <div class="normal">Two </div>
+  <div class="grow">Three has extra text </div>
+</div>
+
+
+
+</body>
+</html>
