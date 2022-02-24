@@ -15,7 +15,8 @@
 
   div {
   border:solid 1px lightblue;  
-  flex: 1 1 auto;     /*這裡的做法和3-9-17的flex-shrink相同，只是這次沒有加入到flex-basis的設定，並使用了速寫的方法來表達 */ 
+  flex: 1 1 auto;    /*這裡的做法和3-9-17的flex-shrink相同，只是這次沒有加入到flex-basis的設定，並使用了速寫的方法來表達 
+   ，這樣做法的問題是，當加入了大量項目時，假若依舊有著空間，系統會自動把每個flex-item佔取的空間減少,影響了你的原先設計，所以最建議的，還是先前3-9-17的處理方法*/ 
   }
   
   .shrink {
