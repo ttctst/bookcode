@@ -10,6 +10,19 @@
   background-color: lightblue;
   padding: 10px;
 }
+  
+.grid-container1 {
+  display: grid;
+ 
+  gap:5px;
+  grid-template-columns: auto auto auto ; /*我們這次只設定了columns的部分，你會發現實際上卻依舊能夠製作出一個3×2的grid出來，這也是當中神奇之處
+  ，假若設定了橫向的方格數目，垂直的也會自動地添加，但只設定了垂直的則不能夠做到相同的效果*/
+  
+  background-color: lightblue;
+
+  padding: 10px;
+}
+
 div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid lightblue;
