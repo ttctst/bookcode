@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  gap:20px 30px;
+  grid-template-rows: 50px 50px; /*這裡和flex的gap是相同，只會影響著grid cell 與grid cell 之間相隔著的空間，而不會影響和外圍方塊的空間，那部份需要以padding來調整*/
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+</body>
+</html>
