@@ -1,0 +1,70 @@
+<!DOCTYPE html>          
+<html>
+<head>              <!--書中大多數的content錯誤地寫為contains，實際上該為place-content、align-content、justify-content，而非place-contains、align-contains、justify-contains-->
+<style>
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: repeat(8, minmax(40px, 1fr));  /*沒有加設align-content: end，由於start為預設值，這也等於start的模樣*/
+  gap:20px 30px;   
+  grid-template-rows: 200px 130px;
+  height:400px;
+  padding: 10px;
+  
+  }
+  
+.grid-container1 {
+  
+  display: grid;
+  grid-template-columns: repeat(8, minmax(40px, 1fr)); 
+  gap:20px 30px;
+  grid-template-rows: 200px 130px;
+  align-content: end;    /*加設align-content: end，，只要運行編碼，會看到較原先的整體貼近於底部，也可以修改一下start的部分，查看其他設定下和原先的差別所在*/
+  height:500px;
+  padding: 10px;
+  margin-top:40px;
+  
+  }
+
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+  
+
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div class="item"></div>  
+</div>
+
+
+<div class="grid-container1">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div class="item"></div>  
+</div>
+
+
+</body>
+</html>
