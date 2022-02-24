@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  
+  display: grid;    /*書中的編碼起始部分添加了額外的.grid和 grid-template-columns: repeat(8, minmax(50px, 1fr));，實際上是沒必要的*/
+  grid-template-columns: repeat(8, minmax(50px, 1fr));
+  gap:20px 30px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+  
+.item{grid-area: 1 / 1 / 2 / 4; }   /*grid-area是用作指定特別grid cell佔取的範圍而用，所以會需要獨立地加設一個新的class來設定*/
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div class="item"></div>     /*我們嘗試把這個class放到最後的div，會發現最後的div，會因為grid-area的設定，而移動到最起初的位置，剩下的則按照一般情況排列*/
+</div>
+
+
+</body>
+</html>
