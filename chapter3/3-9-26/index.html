@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .grid-container {
+  display:grid;
+  grid-template-columns:minmax(100px, 1fr)  minmax(100px, 1fr); 
+  
+  /*minmax編碼的兩個數值，實際上代表著兩部分，前方的為最小大小，而後方則是一般情況下的設定，由於ifr是按比例而設定，在較小的螢幕時會出現過小的問題，所以多數使用這單位時會需要這樣設定。
+   另外這裡我們沒使用到書中提及的repeat，你會留意到實際使用方法和先前的3-4-21等例子是相同，以columns為例，每一個數值代表著一個橫向橫線*/
+  
+  gap:5px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+  div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+  
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+</body>
+</html>
