@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  width:80vw;
+  height:80vh;
+  align-items: flex-start;       /*雖然書中指出align-self的作用是微調align-content部分，但實際上能夠微調的部分為align-items而非align-content*/
+  }
+
+  div {
+  border:solid 1px lightblue;
+  flex: 1 1 200px;
+  height:10vh;  
+  
+  }
+  
+  .start{
+  align-self: center;  /*在這設定下，會留意到每個指定項目都會出現在兩行flex－item之間的中間位置*/
+  }
+ 
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div >One</div>
+  <div >Two </div>
+  <div class="start">Three has extra text </div>
+   <div >One</div>
+  <div >Two </div>
+  <div class="start">Three has extra text </div>
+  
+</div>
+
+
+
+</body>
+</html>
