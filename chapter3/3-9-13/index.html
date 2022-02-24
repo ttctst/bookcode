@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:50vw;
+  height:50vh;
+  flex-flow: row wrap;
+  align-content: center; <!--依舊和先前的相近，只是這次改變為加入align-content的部分-->
+  }
+  
+  div {
+  border:solid 1px lightblue;
+  margin:5px;
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three has extra text</div>
+  <div>One</div>
+  <div>Two</div>
+  <div>Three hasextra text</div>
+</div>
+
+</body>
+</html>
