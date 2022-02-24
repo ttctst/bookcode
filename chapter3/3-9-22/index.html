@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 50px auto;   /*這裡我們除了像書中一樣加入了實際數值外，也使用了auto，這樣即時剩餘多少空間，系統都會自行擴張、填補 */
+  gap:5px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+}
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+</div>
+
+</body>
+</html>
