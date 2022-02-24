@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:50vw;
+  }
+  
+  div {
+  border:solid 1px lightblue;
+  margin:5px;
+  }
+  .active {
+  order: -2;
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div >One</div>
+  <div>Two</div>
+  <div class="active">Three has extra text</div>  <!--原先正常來說，這個項目會在第三個顯示的，但由於order的設定，而-2是在這次最小的數值，所以會最先顯示-->
+</div>
+
+</body>
+</html>
