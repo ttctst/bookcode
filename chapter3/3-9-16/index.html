@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex;
+  flex-flow: row wrap;
+  width:80vw;
+  
+  }
+
+  div {
+  border:solid 1px lightblue;
+  margin:5px;
+  }
+  .grow {
+  flex-grow: 2;
+  }
+  .normal {
+  flex-grow: 1;  
+  /*假若你把這項調整為0，你會留意到它的處理方法，會是盡可能地擴展設定了flex-grow為2的那個項目，剩下的會以完整顯示所有內容作為目標，
+    所以在WordPress使用時其他也需要很好地設定，才能做到你理想中的效果*/
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="normal">One</div>
+  <div class="normal">Two</div>
+  <div class="grow">Three has extra text</div>
+</div>
+
+
+
+</body>
+</html>
