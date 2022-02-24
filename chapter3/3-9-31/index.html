@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: repeat(8, minmax(50px, 1fr));
+  gap:20px 30px;
+  grid-template-rows: 50px 50px;
+  background-color: lightblue;
+  padding: 10px;
+  }
+
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightblue;
+  padding: 20px;
+  }
+  
+.item{grid-area: 1 / 1 / span 1 / span 3; } /*這次和3-9-30的編碼是幾乎相同，只是我們採用到span，你會發現最後的結果和3-9-30也是一樣的，選擇那個設定方法，更偏重你個人的習慣*/
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div ></div>  
+  <div ></div>
+  <div ></div>
+  <div class="item"></div>  
+</div>
+
+
+</body>
+</html>
