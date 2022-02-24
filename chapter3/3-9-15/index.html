@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;      /*gap輸入了一個數值的*/
+  width:50vw;
+  /*雖然在書中的部分例圖指向的為flex item與container之間的空隙，但在實際情況來說，並不會影響這部分，調整的更多是flex item與flex item之間的距離，假若嘗試自行調整數值，你會更能了解的*/
+  }
+   .container2 { 
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px 20px;  /*gap輸入了兩個數值的*/
+  width:50vw;
+  
+  }
+
+  div {
+  border:solid 1px lightblue;
+  margin:5px;
+  }
+  .active {
+  order:-1;
+  }
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div >One</div>
+  <div>Two</div>
+  <div class="active">Three has extra text</div>
+  <div >One</div>
+  <div>Two</div>
+  <div class="active">Three has extra text</div>
+</div>
+
+<div class="container2">
+  <div >One</div>
+  <div>Two</div>
+  <div class="active">Three has extra text</div>
+  <div >One</div>
+  <div>Two</div>
+  <div class="active">Three has extra text</div>
+</div>
+
+</body>
+</html>
