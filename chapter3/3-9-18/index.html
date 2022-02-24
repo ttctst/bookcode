@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Document</title>     <!--天界（head）部分-->
+ <style>
+  .container { 
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  width:80vw;
+  
+  }
+
+  div {
+  border:solid 1px lightblue;
+  flex-basis: 90px;      /*這次和3-9-17的編碼不同，只是單獨地使用了flex-basis，自行調整，會留意到每個flex item，會按著設定的大小而在變化著*/
+  
+  }
+  
+ </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div >One</div>
+  <div >Two </div>
+  <div >Three has extra text </div>
+</div>
+
+
+
+</body>
+</html>
