@@ -44,7 +44,7 @@ https://cutt.ly/01rankmath
 ### Custom post type
 
 #### Crocoblock (jetengine)
-和書中介紹的advance custom field 等插件功能相近，但由於這裡除了custom filed 外，亦提供了cutom post type等插件可使用，節省了不少搜尋額外插件的過程。而價格計算下來，也較pro的advance custom field為低。但注意的是，這主要為支援Elementor(Pro)和Elementor，只有重要的插件同時支援Gutenberg。假若你主要使用的網頁編輯為Elementor或是Gutenberg，這將會是極為優良的選擇。
+和書中介紹的advance custom field 等外掛功能相近，但由於這裡除了custom filed 外，亦提供了cutom post type等插件可使用，節省了不少搜尋額外外掛的過程，同時外掛所提供的功能極為豐富，能自行調整列出頁面的模樣，需要顯示的項目，過濾器上亦提供了更為彈性的設定，甚至還可以自行設定新的query，滿足您不同的實際需要。而價格計算下來，也較pro的advance custom field為低，並提供了即時線上，幫助您短時間內解決問題，外掛唯一問題是設定較為多與複雜，需要時間鑽研。但注意的是，這主要為支援Elementor(Pro)和Elementor，只有重要的插件同時支援Gutenberg。假若你主要使用的網頁編輯為Elementor或是Gutenberg，這將會是極為優良的選擇。
 
 https://cutt.ly/01crocoblock
 
