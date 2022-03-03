@@ -21,7 +21,8 @@ https://cutt.ly/02bluehost
 ### 網頁編輯器
 
 #### Elementor
-最為廣泛使用的網頁編輯器，功能多樣，並由於使用度高，大多數插件都會支援Elementor，並且也能夠和JetEngine一併使用，讓製作Custom Post type等更為容易簡單
+最為廣泛使用的網頁編輯器，功能多樣，並由於使用度高，大多數插件都會支援Elementor，並且也能夠和JetEngine一併使用，讓製作Custom Post type等更為容易簡單。由於Elementor會在週年慶典等日子時，提供較為低廉的優惠，如不逼切，建議可以在那時候再購入
+
 https://cutt.ly/01elementor
 
 #### Divi
